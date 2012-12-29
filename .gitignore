@@ -31,5 +31,6 @@ ipch/
 *.pass
 *.psess
 *.sdf
+*.opensdf
 *.vsp
 *.cd
