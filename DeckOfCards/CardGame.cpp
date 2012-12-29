@@ -22,6 +22,7 @@ void CCardGame::deal( void ) {
 	CCardDeck cd( mCardsNo );
 	uint32_t turn = 0;
 	cd.shuffle( 6546 );
+
 	// TODO tricky stuff!!!
 	while( (c = cd.getCard(), c.isCardValid() ) ) {
 		if( turn ) {
@@ -31,6 +32,9 @@ void CCardGame::deal( void ) {
 		}
 		turn ^= 1;
 	}
+	
+	gameLogFile<<"INIT "<<"("<<mPlayer1Cards.getDeckSize()<<","<<mPlayer2Cards.getDeckSize()<<") "<<endl<<*this;
+
 }
 
 void CCardGame::hand( void ) {

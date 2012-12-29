@@ -2,10 +2,18 @@
 
 #include "types.h"
 #include "consts.h"
+#include "conf.h"
 #include "Card.h"
 
 #include <iostream>
-#include <list>
+
+#ifdef USE_LIST
+	#include <list>
+#endif
+
+#ifdef USE_VECT
+	#include <vector>
+#endif
 
 namespace nsDeckOfCards {
 
@@ -32,8 +40,15 @@ public:
 private:
 	size_t			mMaxNoOfCards;
 	size_t			mCrtNoOfCards;
-	bool			mDeckIsValid; 
+	bool			mDeckIsValid;
+
+#ifdef USE_LIST
 	list<CCard>	mDeck;
+#endif
+
+#ifdef USE_VECT
+	vector<CCard>	mDeck;
+#endif
 
 };
 

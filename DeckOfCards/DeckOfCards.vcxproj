@@ -84,6 +84,7 @@
     <ClInclude Include="Card.h" />
     <ClInclude Include="CardDeck.h" />
     <ClInclude Include="CardGame.h" />
+    <ClInclude Include="conf.h" />
     <ClInclude Include="consts.h" />
     <ClInclude Include="types.h" />
   </ItemGroup>
