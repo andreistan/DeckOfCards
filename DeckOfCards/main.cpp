@@ -1,5 +1,5 @@
 
-// uncommnet this include in order to enable the Visual Leak Detector
+// uncomment this include in order to enable the Visual Leak Detector
 // #include <vld.h>
 
 #include "CardGame.h"
